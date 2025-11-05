@@ -50,7 +50,7 @@
   p(\omega\mid\omega_r,\kappa) = C(\kappa)\, e^{\kappa (\omega\cdot\omega_r)},\quad
   C(\kappa)=\frac{\kappa}{4\pi\sinh\kappa}.
   $$
-- 实值球谐 $Y_\ell^m(\omega)$（$\ell\ge0,\ -\ell\le m\le\ell$），最大带宽 $L$，通道数 $(L+1)^2$。
+- 实值球谐 $Y_\ell^m(\omega)$（$\ell\ge0,\ -\ell\le m\le\ell$），维度/基数 ~~最大带宽~~ $L$，通道数 $(L+1)^2$。
 - IDE 定义（对 vMF 的期望）：
   $$
   \mathrm{IDE}(\omega_r,\kappa) := \Big\{\mathbb{E}_{\omega\sim\mathrm{vMF}(\omega_r,\kappa)}[\,Y_\ell^m(\omega)\,]\Big\}_{0\le\ell\le L,\ -\ell\le m\le\ell}.

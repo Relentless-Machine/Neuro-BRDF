@@ -174,7 +174,7 @@
 
 6. **材质/光照分离模糊**，RGB 图像对反照率和照明强度有尺度模糊，还有如何辨别漫反射和间接光，尤其是反射表面（如何分离金属度，粗糙度，光照）
 
-7. **透明、半透明、发光、参与媒质（雾和烟）场景**，体散射场景不适用不透明微表面 BRDF（类似于烟、雾、尘埃、玉石、牛奶等对所穿过的光线产生散射、吸收等作用的空间介质被称为 参与介质（participating media）。因为 BSDF（Bidirectional Scattered Distribution Function，即双向散射分布函数）只考虑了光线在物体表面散射，所以无法准确地建模参与介质。）
+7. **透明、半透明、发光、参与媒质（雾和烟）场景**，体散射场景不适用不透明微表面 BRDF（类似于烟、雾、尘埃、玉石、牛奶等对所穿过的光线产生散射、吸收等作用的空间介质被称为参与介质（participating media）。因为 BSDF（Bidirectional Scattered Distribution Function，即双向散射分布函数）只考虑了光线在物体表面散射，所以无法准确地建模参与介质。）
 
 ## 日志
 
@@ -190,10 +190,19 @@
 - 添加背景：球谐函数 SH，基于图像的光照 IBL，屏幕空间环境光遮蔽 SSAO，立方体贴图 Cube Map，球面高斯 Spherical Gaussian，3D 高斯泼溅 3DGS
 - [IDE 的解释与推导](./IDE.md)
 
-### 2025.10.15 - 10.22
+### 2025.10.15 - 10.21
 
 - 进一步完善 [IDE 的解释与推导](./IDE.md)
 - 分析 shading 中如何从输入的参数中取得空间位置信息，即 [MLP 的详细分析与其他关联内容的描述](./MLP.md)
+
+### 2025.10.22
+
+- 参考书籍《基于物理的渲染（PBR）白皮书》
+- 论文（SIGGRAPH '25）：[Neural BRDF Importance Sampling by Reparameterization](https://dl.acm.org/doi/10.1145/3721238.3730679)
+- 论文（TOG 2024）：[Importance Sampling BRDF Derivatives](https://dl.acm.org/doi/10.1145/3648611)
+- 被引用；<https://dl.acm.org/doi/10.1145/3759248>
+- 被引用：<https://ieeexplore.ieee.org/document/10989507>
+- 被引用：<https://ieeexplore.ieee.org/document/11094442>
 
 ### 2025.10.23 - 10.28
 

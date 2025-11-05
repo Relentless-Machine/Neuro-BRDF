@@ -269,7 +269,7 @@ python run_training.py --cfg configs/material/real/bear.yaml
     # nvdiffrast & raytracing per README
     ```
 
-2. Prepare dataset in `data/GlossyReal/<scene>` or use provided sample data. 
+2. Prepare dataset in `data/GlossyReal/<scene>` or use provided sample data.
 
 3. Stage I train:
 

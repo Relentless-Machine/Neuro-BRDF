@@ -86,7 +86,7 @@
 
 ## 网络架构
 
-![Architecture of networks in Stage I](./Network1.png "Architecture of networks in Stage I")
+![Architecture of networks in Stage I](./assets/Network1.png "Architecture of networks in Stage I")
 
 ### 神经 SDF 网络
 

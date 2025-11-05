@@ -209,7 +209,15 @@
 - 解决环境冲突，修改代码以能正常完成环境配置，得到 [conda 环境配置文件](./environment.yml)
 - 训练 44999 轮
 
-### 2025.10.29
+### 2025.10.29 -11.4
 
 - 了解数据预处理过程
 - 分析主体与背景区分和训练过程细节
+
+### 2025.11.5
+
+- 训练自己的数据集
+- 考虑 3D 表示问题
+- 考虑 NeRO 的计算 SDF 过程中是否使用了 Voxel Hashing 以及参考 NeuS 的计算 SDF 方法（先计算 SDF，再推导 Occupancy field；SDF 可能可以直接线性映射到占用概率）
+- 似乎还有一个 Neural Radiance Field （神经辐射场， NeRF），其用神经网络拟合辐射场，NeRO 也可能采用了这个表示方法，毕竟其参考了 [Ref-NeRF](https://dorverbin.github.io/refnerf)
+- 参考 [Neuralangelo](https://research.nvidia.com/labs/dir/neuralangelo)，尤其是计算无偏的 SDF 方法层面

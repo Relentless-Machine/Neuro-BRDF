@@ -209,7 +209,7 @@
 - 解决环境冲突，修改代码以能正常完成环境配置，得到 [conda 环境配置文件](./environment.yml)
 - 训练 44999 轮
 
-### 2025.10.29 -11.4
+### 2025.10.29 - 11.4
 
 - 了解数据预处理过程
 - 分析主体与背景区分和训练过程细节
@@ -221,3 +221,19 @@
 - 考虑 NeRO 的计算 SDF 过程中是否使用了 Voxel Hashing 以及参考 NeuS 的计算 SDF 方法（先计算 SDF，再推导 Occupancy field；SDF 可能可以直接线性映射到占用概率）
 - 似乎还有一个 Neural Radiance Field （神经辐射场， NeRF），其用神经网络拟合辐射场，NeRO 也可能采用了这个表示方法，毕竟其参考了 [Ref-NeRF](https://dorverbin.github.io/refnerf)
 - 参考 [Neuralangelo](https://research.nvidia.com/labs/dir/neuralangelo)，尤其是计算无偏的 SDF 方法层面
+
+### 2025.11.6 - 11.19
+
+- 其他表示与渲染范式（非 HashGrid 的替代）
+
+  - Gaussian Splatting / point-splat methods（2023 起流行）：在速度与视图质量上对 NeRF 一度构成强竞争，适合快速高质量的 view synthesis（代表性综述在 NeRF survey 中提及）。
+
+  - Tri-plane / Plenoxels / explicit sparse grids / multi-plane features（EG3D/InstantNGP 衍生）：在某些场景和任务上能更快或更节省内存。
+
+   结论：这些方法在速度或工程集成上有优势，特别适合某些任务（视频级别、场景级），但在物理材质分解和 SDF→alpha 的显式表面可解释性方面未必优于 SDF+hash 的方案。
+
+- Material / reflectance decomposition 相关进展
+
+  - 近年有多篇 work 专门关注 specular / transparent / SSS 的处理（Ref-NeRF 系列、各种 BRDF-aware NeRF 扩展等），可借鉴到材质 heads 和损失设计上。
+
+   结论：用于材质分解的专门模型愈发成熟，可与软分割联合提高效果。

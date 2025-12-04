@@ -13,6 +13,10 @@ on:
   # Allow manual trigger
   workflow_dispatch:
 
+# Limit permissions of GITHUB_TOKEN for security
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest

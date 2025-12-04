@@ -189,11 +189,11 @@ python run_training.py --cfg configs/material/real/bear.yaml
 
 下面把“自动区分”拆成若干子机制，并说明如何在训练中监测与验证每一步的工作。
 
-| ![训练可视化 4999 轮](./assets/4999-index-0.jpg) | ![训练可视化 19999 轮](./assets/19999-index-0.jpg) | ![训练可视化 299999 轮](./assets/299999-index-0.jpg) |
+| ![训练可视化 4999 轮](/assets/4999-index-0.jpg) | ![训练可视化 19999 轮](/assets/19999-index-0.jpg) | ![训练可视化 299999 轮](/assets/299999-index-0.jpg) |
 |:--:|:--:|:--:|
 | Stage I 训练 4999 轮 | Stage I 训练 19999 轮 | Stage I 训练 299999 轮 |
 
-| ![训练可视化 4999 轮](./assets/2-4999-index-0.jpg) | ![训练可视化 19999 轮](./assets/2-14999-index-0.jpg) | ![训练可视化 299999 轮](./assets/2-99999-index-0.jpg) |
+| ![训练可视化 4999 轮](/assets/2-4999-index-0.jpg) | ![训练可视化 19999 轮](/assets/2-14999-index-0.jpg) | ![训练可视化 299999 轮](/assets/2-99999-index-0.jpg) |
 |:--:|:--:|:--:|
 | Stage II 训练 4999 轮 | Stage II 训练 14999 轮 | Stage II 训练 99999 轮 |
 
@@ -258,7 +258,7 @@ python run_training.py --cfg configs/material/real/bear.yaml
 
 ## 10. 附录：训练清单
 
-> 已经得到了 [conda 环境配置文件](./environment.yml)
+> 已经得到了 [conda 环境配置文件](/assets/environment.yml)
 
 1. Clone repo & install deps:
 
